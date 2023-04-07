@@ -1,9 +1,9 @@
-def split_and_join(line):
-    words = line.split()
-    joinedwords = '-'.join(words)
-    return joinedwords
+def mutate_string(string, position, character):
+    letterslist = [letter for letter in string]
+    letterslist[position] = character
+    return ''.join(letterslist)
 
-
-line = "this is a string"
-result = split_and_join(line)
-print(result)
+s = 'abracadabra'
+i, c = 5, "k"
+s_new = mutate_string(s, int(i), c)
+print(s_new)

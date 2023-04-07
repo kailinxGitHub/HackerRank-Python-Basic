@@ -100,9 +100,27 @@ if __name__ == '__main__':
     result = split_and_join(line)
     print(result)
 
+#What's Your Name?
+def print_full_name(first, last):
+    print("Hello {} {}! You just delved into python.".format(first_name, last_name))
 
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
 
+#Mutations
+def mutate_string(string, position, character):
+    letterslist = [letter for letter in string]
+    letterslist[position] = character
+    return ''.join(letterslist)
 
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
 
+#Find a String
 
 
