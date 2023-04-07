@@ -47,27 +47,62 @@ if __name__ == '__main__':
         command = str(input())
         split_command = command.split()
         if split_command[0] == "insert":
-            vari = int(split_command[1])
-            vare = int(split_command[2])
-            list.insert(vari, vare)
+            list.insert(int(split_command[1]), int(split_command[2]))
         elif split_command[0] == "print":
             print(list)
         elif split_command[0] == "remove":
-            vare = int(split_command[2])
-            for j in list:
-                if j == vare:
-                    list.remove(j)
+            list.remove(int(split_command[1]))
         elif split_command[0] == "append":
-            vare = int(split_command[2])
-            list[-1].append(vare)
+            list.append(int(split_command[1]))
         elif split_command[0] == "sort":
             list.sort()
         elif split_command[0] == "pop":
-            list[-1].pop()
+            list.pop()
         elif split_command[0] == "reverse":
-            list.sort(reverse=True)
-        else:
-            continue
+            list.reverse()
             
-            
-        
+#Tuples
+line1 = int(input())
+line2 = str(input())
+slicedline2 = line2.split()
+l2v1 = int(slicedline2[0])
+l2v2 = int(slicedline2[1])
+t = tuple(line1) + tuple(l2v1, l2v2)
+tup = tuple(t)
+print(hash(tup))
+
+#sWAP cASE
+def swap_case(s):
+    sentence = []
+    if len(s) in range(0,1001):
+        for letter in s:
+            if letter.isupper():
+                sentence.append(letter.lower())
+            elif letter.islower():
+                sentence.append(letter.upper())
+            else:
+                sentence.append(letter)
+    return ''.join(sentence)
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
+
+#String Split and Join
+def split_and_join(line):
+    words = line.split()
+    joinedwords = '-'.join(words)
+    return joinedwords
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
+
+
+
+
+
+
+
