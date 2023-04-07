@@ -1,9 +1,16 @@
-def mutate_string(string, position, character):
-    letterslist = [letter for letter in string]
-    letterslist[position] = character
-    return ''.join(letterslist)
+def count_substring(string, sub_string):
+    innercount = 0
+    sunique = set()
+    newstring = [i for i in string if i not in sunique and not sunique.add(i)]
+    ssunique = set()
+    newsub_string = [j for j in sub_string if j not in ssunique and not ssunique.add(j)]
+    for k in newstring:
+        for z in newsub_string:
+            if k == z:
+                innercount += 1
+    return innercount
 
-s = 'abracadabra'
-i, c = 5, "k"
-s_new = mutate_string(s, int(i), c)
-print(s_new)
+string = "ABCDCDC".strip()
+sub_string = "CDC".strip()
+count = count_substring(string, sub_string)
+print(count)
