@@ -1,4 +1,3 @@
-
 #List Comprehensions
 if __name__ == '__main__':
     x = int(input())
@@ -12,24 +11,6 @@ if __name__ == '__main__':
     print(perm)
 
 #Find the Runner-Up Score!
-#Trial 1
-if __name__ == '__main__':
-    n = int(input())
-    arr = map(int, input().split())
-    newlist = []
-    for i in arr:
-        if n in range(2, 10) and i not in newlist:
-            newlist.append(i)
-    newlist.sort(reverse=True)
-    print(newlist[1])
-#Trial 2: 
-if __name__ == '__main__':
-    n = int(input())
-    arr = map(int, input().split())
-    newlist = [i for i in arr if n in range(2, 10) and i not in newlist]
-    newlist.sort(reverse=True)
-    print(newlist[1])
-#Working
 if __name__ == '__main__':
     n = int(input())
     arr = list(map(int, input().split()))
