@@ -114,6 +114,7 @@ if __name__ == '__main__':
 
 #Designer Door Mat
 
+
 #String Formatting
 def print_formatted(number):
     w=len(str(bin(number))[2:])
@@ -149,6 +150,7 @@ if __name__ == '__main__':
     fptr.close()
 
 #The Minion Game
+
 
 #Merge the Tools!
 
