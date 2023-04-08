@@ -75,3 +75,4 @@ if __name__ == '__main__':
     print(any([i.islower() for i in s]))
     print(any([i.isupper() for i in s]))
 
+#Text Alignment
