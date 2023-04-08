@@ -62,14 +62,10 @@ if __name__ == '__main__':
             list.reverse()
             
 #Tuples
-line1 = int(input())
-line2 = str(input())
-slicedline2 = line2.split()
-l2v1 = int(slicedline2[0])
-l2v2 = int(slicedline2[1])
-t = tuple(line1) + tuple(l2v1, l2v2)
-tup = tuple(t)
-print(hash(tup))
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    print(tuple(integer_list).__hash__())
 
 #sWAP cASE
 def swap_case(s):
