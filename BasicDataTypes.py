@@ -108,4 +108,3 @@ if __name__ == '__main__':
     integer_list = map(int, input().split())
     print(tuple(integer_list).__hash__())
 
-
