@@ -61,4 +61,12 @@ if __name__ == '__main__':
     newlist = [i for i in arr if n in range(2, 10) and i not in newlist]
     newlist.sort(reverse=True)
     print(newlist[1])
-
+#Working
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    arr.sort(reverse=True)
+    for i in range(n):
+        if arr[i] > arr[i+1]:
+            print(arr[i+1])
+            break
