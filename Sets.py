@@ -36,8 +36,22 @@ def add():
 add()
 
 #Set .discard(), .remove() & .pop()
+n = int(input())
+s = set(map(int, input().split()))
+N = int(input())
+if n in range(0, 20) and N in range(0, 20):
+    for i in range(N):
+        command = str(input()).split(" ")
+        if command[0] == "pop":
+            s.pop()
+        elif command[0] == "remove":
+            s.remove(int(command[1]))
+        elif command[0] == "discard":
+            s.discard(int(command[1]))
+    print(sum(s))
 
 #Set .union() Operation
+
 
 #Set .intersection() Operation
 
