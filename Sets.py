@@ -104,7 +104,19 @@ if len(set(Aset)) in range(0, 1000) and N in range(0, 100):
     print(sum(Aset))
 
 #The Captain's Room
+K = int(input())
+unord = list(map(int, input().split()))
 
+if K in range(1, 1000):
+    unique = set()
+    multiple = set()
+    for i in unord:
+        if i in unique:
+            multiple.add(i)
+        else:
+            unique.add(i)
+    joint = list(unique.difference(multiple))
+    print(joint[0])
 
 #Check Subset
 
