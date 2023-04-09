@@ -151,3 +151,9 @@ for j in range(len(master_set)):
 print(status)
 
 #No Idea!
+n, m = input().split()
+n_int = list(map(int, input().split()))
+A = set(map(int, input().split()))
+B = set(map(int, input().split()))
+
+print(sum((i in A)-(i in B) for i in n_int))
