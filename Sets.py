@@ -133,3 +133,21 @@ for i in range(T):
             print(False)
 
 #Check Strict Superset
+set_a = set(map(int, input().split()))
+
+n = int(input())
+master_set = []
+for i in range(n):
+    temp_set = set(map(int, input().split()))
+    answer = set_a.issuperset(temp_set)
+    temp_full = temp_set, answer
+    master_set.append(temp_full)
+status = True
+for j in range(len(master_set)):
+    if master_set[j][1] == False:
+        status = False
+    else: 
+        continue
+print(status)
+
+#No Idea!
