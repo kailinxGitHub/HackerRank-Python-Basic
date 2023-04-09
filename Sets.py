@@ -10,6 +10,14 @@ if __name__ == '__main__':
     result = average(arr)
     print(result)
 
+#No Idea!
+n, m = input().split()
+n_int = list(map(int, input().split()))
+A = set(map(int, input().split()))
+B = set(map(int, input().split()))
+
+print(sum((i in A)-(i in B) for i in n_int))
+
 #Symmetric Difference
 def symmetricdiff(m,a,n,b):
     list = a.difference(b).union(b.difference(a))
@@ -149,11 +157,3 @@ for j in range(len(master_set)):
     else: 
         continue
 print(status)
-
-#No Idea!
-n, m = input().split()
-n_int = list(map(int, input().split()))
-A = set(map(int, input().split()))
-B = set(map(int, input().split()))
-
-print(sum((i in A)-(i in B) for i in n_int))
