@@ -119,5 +119,17 @@ if K in range(1, 1000):
     print(joint[0])
 
 #Check Subset
+T = int(input())
+
+for i in range(T):
+    ele_a = int(input())
+    set_a = set(map(int, input().split()))
+    ele_b = int(input())
+    set_b = set(map(int, input().split()))
+    if T in range(0, 21) and (len(set_a) and len(set_b)) in range(0, 1001):
+        if set_a.issubset(set_b):
+            print(True)
+        else:
+            print(False)
 
 #Check Strict Superset
