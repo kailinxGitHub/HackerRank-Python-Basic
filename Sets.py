@@ -11,6 +11,18 @@ if __name__ == '__main__':
     print(result)
 
 #Symmetric Difference
+def symmetricdiff(m,a,n,b):
+    list = a.difference(b).union(b.difference(a))
+    nums = [int(i) for i in list]
+    nums.sort()
+    for i in nums:
+        print(i)
+
+m = int(input())
+a = set(str(input()).split(" "))
+n = int(input())
+b = set(str(input()).split(" "))
+symmetricdiff(m,a,n,b)
 
 #Set .add()
 def add():
@@ -22,7 +34,6 @@ def add():
     print(len(myset))
 
 add()
-
 
 #Set .discard(), .remove() & .pop()
 
