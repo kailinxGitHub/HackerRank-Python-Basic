@@ -8,7 +8,7 @@ SUBDOMAINS
 
 - [ ] Strings
 
-- [ ] Sets
+- [x] Sets
 
 - [ ] Math
 
