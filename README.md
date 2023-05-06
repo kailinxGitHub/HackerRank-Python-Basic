@@ -1,4 +1,4 @@
-# HackerRank-Python-Basic
+# [Duck Duck Go](https://www.hackerrank.com/domains/python?filters%5Bskills%5D%5B%5D=Python%20%28Basic%29)
 
 SUBDOMAINS
 
